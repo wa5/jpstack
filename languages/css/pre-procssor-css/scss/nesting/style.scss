@@ -1,0 +1,51 @@
+@import 'borders';
+@import 'fonts';
+@import 'colors';
+// $boder:2px solid rgb(243, 225, 225);
+//its without method concep
+// @mixin coommnborde {
+// border: 2px solid rgb(243, 225, 225);
+// color: rgb(23, 24, 23);
+    
+// }
+
+
+//its with method concept
+@mixin coommn($width,$height,$bgcolor) {
+    border: $border;
+    width: $width;
+    height: $height;
+    background-color: $bgcolor;
+        font-size:$fontsize ;
+        color:$color ;
+    }
+
+
+
+.op{
+    background-color: aqua;
+}
+
+.parent{
+   // @include coommnborde;
+    @include coommn(400px,400px ,blue );
+    .child{
+
+        @include coommn(300px,300px,green );
+
+    .grandchild{
+        @include coommn(200px,200px,rgb(231, 56, 94) );
+    
+
+    .dgc{
+        @include coommn(100px,100px ,rgb(231, 56, 173));
+       
+       
+
+    }
+   
+     }
+
+
+    }
+}

@@ -1,0 +1,61 @@
+.container{
+    display:grid ;
+    border: 3px solid black;
+    /* grid-template-columns: 200px 200px 200px; */
+/** fraction special unit ifr
+*!reapeat()
+*/
+    /* grid-template-columns: repeat(3,1fr); */
+     /* grid-auto-columns: 300px;  */
+     /* width */
+     /* grid-auto-columns: minmax(200px,auto); */
+     /* height */
+     /* grid-auto-rows: minmax(100px,auto); */
+    grid-gap: 20px;
+
+grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+
+
+
+}
+.item{
+  
+    text-align: center;
+    color: rgb(48, 206, 27);
+    /* width: 200px;
+    height: 200px; */
+    font-size: 72px;
+    /* padding: 10px;
+    margin: 10px; */
+    background-color: rgba(0, 0, 255, 0.829);
+    border: 3px solid black;
+
+
+
+
+}
+
+#item-1{
+    grid-column-start: 2;
+    grid-column-end:3;
+} 
+
+#item-3{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end: 2;
+} 
+
+#item-2{
+    grid-row-start:2;
+    grid-row-end: 3; 
+}
+#item-4{
+    grid-column-start: 4;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end: 2; 
+
+
+}

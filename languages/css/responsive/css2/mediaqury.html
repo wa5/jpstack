@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<style>
+.box{
+font-size: 72px;
+text-align: center;
+background-color: red;
+color: white;
+display: none;
+
+}
+@media (max-width:300px) {
+    #box-1{
+        display: block; 
+        background-color: yellow;
+    }
+}
+@media (max-width:500px) and (min-width:301px){
+
+    #box-2{
+        display: block; 
+        background-color: rgb(27, 218, 21);
+    }
+}
+@media (max-width:900px) and (min-width:501px){
+
+#box-3{
+    display: block; 
+    background-color: rgb(218, 77, 21);
+}
+}
+
+@media  (min-width:901px){
+
+#box-4{
+    display: block; 
+    background-color: rgb(218, 21, 119);
+}
+}
+
+
+</style>
+
+
+
+       <div class="box" id="box-1">im a phone with below 300px</div>
+       <div class="box" id="box-2">im a tablet above 300px below 500px</div>
+       <div class="box" id="box-3">im a computer above 500px below 9oopx</div>
+       <div class="box" id="box-4">im a smart tv above 900px to 3000px </div>
+       
+        
+      
+    </body>
+</html>

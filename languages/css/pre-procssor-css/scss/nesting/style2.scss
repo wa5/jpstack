@@ -1,0 +1,46 @@
+
+// examoples nesting nesting &
+
+
+.op{
+    background-color: aqua;
+}
+
+.parent{
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+
+
+    .child{
+
+        border: 2px solid black;
+        width: 300px;
+        height: 300px;
+        background-color: rgb(56, 231, 79);
+
+    .grandchild{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(231, 56, 94);
+
+    .dgc{
+        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(231, 56, 173);
+        &:hover{
+            background-color: rgb(35, 184, 243);
+        }
+
+    }
+    &:hover{
+        background-color: rgb(35, 184, 243);
+    }
+     }
+
+
+    }
+}
