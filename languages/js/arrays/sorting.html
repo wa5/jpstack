@@ -1,0 +1,18 @@
+<script>
+
+var numbers=[19,8,2,3,4,5]
+numbers.sort()
+document.write(numbers,"<br>")
+
+numbers.sort((a,b)=>{
+if(a>b) return 1;
+if(a<b) return -1;
+return 0
+
+});
+document.write(numbers,"<br>")
+
+numbers.sort((a,b)=> a-b)
+
+document.write(numbers)
+</script>
