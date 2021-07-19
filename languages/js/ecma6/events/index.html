@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<style>
+    body,
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grandparent {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+    }
+
+    .parent {
+        width: 150px;
+        height: 150px;
+        background-color: rgb(88, 201, 44);
+    }
+
+    .child {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(156, 16, 74);
+    }
+</style>
+
+
+<body>
+
+
+    <div class="grandparent">
+
+        <div class="parent">
+
+            <div class="child">
+
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    const grandparent=document.querySelector(".grandparent") ;
+    const parent=document.querySelector(".parent");
+    const child=document.querySelector(".child");
+
+
+    grandparent.addEventListener("click",(e)=>{
+        console.log(e.target)
+    })
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
