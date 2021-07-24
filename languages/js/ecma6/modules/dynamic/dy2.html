@@ -5,13 +5,16 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+      ]
     </head>
+    <style>
+
+        button{
+            background-color: brown;
+            color: white;
+            font-size: 70px;
+        }
+    </style>
     <body>
        <button    class="button" id="myButton">click </button>
 
@@ -19,7 +22,9 @@
      <script>
 document.getElementById('myButton')
 .addEventListener('click',()=>{
-    import('./jsmodules/math.js').then((math)=>{
+
+    const module= 1>2?'./jsmodules/math.js':'./jsmodules/math1.js'
+    import(module).then((math)=>{
         console.log(math)
         alert(math.multipay(5,10))
     })

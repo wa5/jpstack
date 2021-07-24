@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      
+    </head>
+    <body>
+        <script>
+let akshita_promiss=new Promise((resol,reject)=>{
+
+    setTimeout(()=>{
+        resol("tq for giving job");
+    },3000)
+
+})
+console.log(akshita_promiss)
+akshita_promiss.then((data)=>{
+    console.log(data)
+    document.getElementById('opo').innerHTML=data;
+})
+
+        </script>
+
+
+
+
+
+        
+        <h1>we r lering promiss concetp</h1>
+<h1 id="opo"></h1>
+       
+    </body>
+</html>
