@@ -1,0 +1,15 @@
+{
+  "name": "webpac-example",
+  "version": "1.0.0",
+  "description": "\"study\"",
+  "main": "index.js",
+  "scripts": {
+    "ratna": "webpack"
+  },
+  "author": "samreen",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2"
+  }
+}

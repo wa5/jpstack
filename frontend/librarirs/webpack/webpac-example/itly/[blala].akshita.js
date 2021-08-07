@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("hello all im from diffent js file"),console.log("im exames went good")})();
