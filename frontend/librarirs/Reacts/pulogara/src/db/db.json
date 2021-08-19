@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "akshita",
+      "chocalate": "munch"
+    },
+    {
+      "id": 2,
+      "name": "pravalika",
+      "chocalate": "dairymilk"
+    },
+    {
+      "id": 3,
+      "name": "vinodth",
+      "chocalate": "milkybar"
+    }
+  ]
+  
+}

@@ -1,0 +1,11 @@
+2021/08/19 14:17:36 [emerg] 6340#16064: "server" directive is not allowed here in D:\all\all\jpstack\devops\nginx-1.20.1/conf/nginx.conf:57
+2021/08/19 14:19:46 [error] 18132#12764: *4 CreateFile() "D:\all\all\jpstack\devops\nginx-1.20.1/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8000", referrer: "http://localhost:8000/"
+2021/08/19 14:21:43 [emerg] 19920#472: "proxy_pass" directive is not allowed here in D:\all\all\jpstack\devops\nginx-1.20.1/conf/nginx.conf:86
+2021/08/19 14:21:43 [alert] 16412#16328: worker process 19920 exited with code 1
+2021/08/19 14:21:43 [alert] 16412#16328: could not respawn worker
+2021/08/19 14:22:16 [emerg] 9684#10380: "proxy_pass" directive is not allowed here in D:\all\all\jpstack\devops\nginx-1.20.1/conf/nginx.conf:86
+2021/08/19 14:26:12 [error] 18816#19552: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://[::1]:9000/", host: "localhost:8000"
+2021/08/19 14:26:14 [error] 18816#19552: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:9000/", host: "localhost:8000"
+2021/08/19 14:26:28 [error] 18816#19552: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:9000/", host: "localhost:8000"
+2021/08/19 14:26:32 [error] 18816#19552: *2 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://[::1]:9000/", host: "localhost:8000"
+2021/08/19 14:26:32 [error] 18816#19552: *2 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://localhost/", host: "localhost:8000"

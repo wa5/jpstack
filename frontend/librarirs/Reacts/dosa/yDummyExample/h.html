@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>E-Mart Login</title>
+	<!-- Perfect Scrollbar -->
+	<link type="text/css" href="https://chatni.direct-buy.in/assets1/vendor/perfect-scrollbar.css" rel="stylesheet">
+	<!-- Material Design Icons -->
+	<link type="text/css" href="https://chatni.direct-buy.in/assets1/css/material-icons.css" rel="stylesheet">
+	<link type="text/css" href="https://chatni.direct-buy.in/assets1/css/material-icons.rtl.css" rel="stylesheet">
+	<!-- Font Awesome Icons -->
+	<link type="text/css" href="https://chatni.direct-buy.in/assets1/css/fontawesome.css" rel="stylesheet">
+	<link type="text/css" href="https://chatni.direct-buy.in/assets1/css/fontawesome.rtl.css" rel="stylesheet">
+
+	<!-- App CSS -->
+	<link type="text/css" href="https://chatni.direct-buy.in/assets1/css/app.css" rel="stylesheet">
+	<link rel="shortcut icon" href="https://chatni.direct-buy.in/assets1/uploads/">
+</head>
+
+<body class="login" style="background-color:#E0E0E0">
+	<div class="d-flex align-items-center">
+		<div class="col-sm-10 col-md-6 col-lg-5 mx-auto">
+			<div class="text-center mt-5 mb-1">
+
+				<img class="logo-mobile" src="https://chatni.direct-buy.in/assets1/uploads/" alt="E-Mart" id="upfile1" style="width:250px;height:130px;">
+                            </div>
+				&nbsp;
+				<div id="content-desktop">
+					<div class="card navbar-shadow" style="border-radius:35px;">
+
+						<div class="card-body">
+							<form action="https://chatni.direct-buy.in/Login/auth" method="post">
+								<div class="form-group">
+									<label class="form-label" for="email">Store Domain</label>
+									<div class="input-group">
+										<input name="domainname" class="form-control" type="text" readonly="" class="form-control" value="chatni" style="border-radius:5px;width:250px;height:40px;background-color:#E0E0E0;">
+                                </div>
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="email" >Email</label>
+										<div class="input-group">
+											<input name="email" class="form-control" type="email" required="" class="form-control" value="waseemahmed116@gmail.com" placeholder="Email Address" style="border-radius:5px;width:250px;height:40px;background-color:#E0E0E0;">
+                                </div>
+										</div>
+										<div class="form-group">
+											<label class="form-label" for="password">Your password</label>
+											<div class="input-group">
+												<input name="password" class="form-control" placeholder="Enter Password" type="password" value="wa5@123" required style="border-radius:5px;width:250px;height:40px;background-color:#E0E0E0;"/>
+                                </div>
+											</div>
+											<div class="form-group">
+												<div class="checkbox">
+													<label>
+                                        <input type="checkbox" name="remember" > Remember Me
+                                    </label>
+													<a href="https://chatni.direct-buy.in/Admin/forgotPassword"
+														class="NrmLnk" style="color:#4C80E1;float:right;">Forgot
+														Password?</a>
+												</div>
+											</div>
+											<br>
+											<div class="form-group ">
+												<button type="submit" class="btn btn-default" style="background-color:#4C80E1;border-color:#4C80E1;float:right;color:#fff">Login</button>
+											</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>
+<script src="https://chatni.direct-buy.in/assets1/vendor/jquery.min.js"></script>
+<!--//Satarts fluesh message  -->
+
+
+<script>
+	function myFunction() 
+    {
+        var x = document.getElementById("password");
+        if (x.type === "password") 
+        {
+            x.type = "text";
+        } 
+        else 
+        {
+            x.type = "password";
+        }
+    }
+</script>

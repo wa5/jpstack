@@ -2,12 +2,12 @@
 import React from 'react'
 import {Card,Button} from 'react-bootstrap'
 
-import img from '../../assets/img/3.jpg'
-function Cards() {
+//import img from '../../assets/img/3.jpg'
+function Cards(props) {
     return (
-        <>
-            <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src={img}/>
+        <React.Fragment>
+            <Cards style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={props.img}/>
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
     <Card.Text>
@@ -16,8 +16,8 @@ function Cards() {
     </Card.Text>
     <Button variant="primary">Go somewhere</Button>
   </Card.Body>
-</Card>
-        </>
+</Cards>
+        </React.Fragment>
     )
 }
 
