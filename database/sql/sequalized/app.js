@@ -2,18 +2,21 @@ const express=require('express')
 const app=express();
 
 require('../sequalized/config/db.config')
-app.get('/home',(req,res)=>{
-res.send("hello world")
+
+const classes=require('../sequalized/src/models/classes.models')
+
+app.get('/home',async(req,res)=>{
+    const user= await classes.findone({
+        where:{
+            id:0
+        }
+    }).catch((err)=>{
+    console.log(err)
+    })
+res.send("hello world",user)
 });
 
-app.post('/home',(req,res)=>{
-    res.send("hello world")
-    });
 
-    app.delete('/home',(req,res)=>{
-        res.send("hello world")
-        });
-    
 
 app.listen(8001,()=>{
     console.log("server started")
